@@ -1,0 +1,10 @@
+---
+
+- hosts: all
+  become_method: runas
+  tasks:
+
+  - name: "az elso playbook"
+    gather_facts:
+  - name: "ping"
+    win_ping:
